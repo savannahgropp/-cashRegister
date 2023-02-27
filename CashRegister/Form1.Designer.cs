@@ -155,6 +155,7 @@
             this.subtotalLabel.TabIndex = 8;
             this.subtotalLabel.Text = "Subtotal";
             this.subtotalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.subtotalLabel.Visible = false;
             // 
             // taxLabel
             // 
@@ -167,6 +168,7 @@
             this.taxLabel.TabIndex = 9;
             this.taxLabel.Text = "Tax Amount";
             this.taxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.taxLabel.Visible = false;
             // 
             // totalLabel
             // 
@@ -179,10 +181,12 @@
             this.totalLabel.TabIndex = 10;
             this.totalLabel.Text = "Total";
             this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.totalLabel.Visible = false;
             // 
             // calculateChangeButton
             // 
             this.calculateChangeButton.BackColor = System.Drawing.Color.Navy;
+            this.calculateChangeButton.Enabled = false;
             this.calculateChangeButton.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.calculateChangeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.calculateChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -195,6 +199,7 @@
             this.calculateChangeButton.TabIndex = 14;
             this.calculateChangeButton.Text = "Calculate Change";
             this.calculateChangeButton.UseVisualStyleBackColor = false;
+            this.calculateChangeButton.Visible = false;
             this.calculateChangeButton.Click += new System.EventHandler(this.calculateChangeButton_Click);
             // 
             // tenderedLabel
@@ -208,6 +213,7 @@
             this.tenderedLabel.TabIndex = 15;
             this.tenderedLabel.Text = "Tendered";
             this.tenderedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tenderedLabel.Visible = false;
             // 
             // tenderedInput
             // 
@@ -216,6 +222,7 @@
             this.tenderedInput.Name = "tenderedInput";
             this.tenderedInput.Size = new System.Drawing.Size(100, 24);
             this.tenderedInput.TabIndex = 16;
+            this.tenderedInput.Visible = false;
             // 
             // label5
             // 
@@ -224,6 +231,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(424, 10);
             this.label5.TabIndex = 17;
+            this.label5.Visible = false;
             // 
             // subtotalOutput
             // 
@@ -236,6 +244,7 @@
             this.subtotalOutput.Size = new System.Drawing.Size(100, 24);
             this.subtotalOutput.TabIndex = 18;
             this.subtotalOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.subtotalOutput.Visible = false;
             // 
             // taxOutput
             // 
@@ -248,6 +257,7 @@
             this.taxOutput.Size = new System.Drawing.Size(100, 24);
             this.taxOutput.TabIndex = 19;
             this.taxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.taxOutput.Visible = false;
             // 
             // totalOutput
             // 
@@ -260,6 +270,7 @@
             this.totalOutput.Size = new System.Drawing.Size(100, 24);
             this.totalOutput.TabIndex = 20;
             this.totalOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.totalOutput.Visible = false;
             // 
             // changeLabel
             // 
@@ -272,6 +283,7 @@
             this.changeLabel.TabIndex = 21;
             this.changeLabel.Text = "Change";
             this.changeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.changeLabel.Visible = false;
             // 
             // changeOutput
             // 
@@ -284,10 +296,12 @@
             this.changeOutput.Size = new System.Drawing.Size(100, 24);
             this.changeOutput.TabIndex = 22;
             this.changeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.changeOutput.Visible = false;
             // 
             // printButton
             // 
             this.printButton.BackColor = System.Drawing.Color.Navy;
+            this.printButton.Enabled = false;
             this.printButton.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
             this.printButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.printButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -300,6 +314,7 @@
             this.printButton.TabIndex = 23;
             this.printButton.Text = "Print Receipt";
             this.printButton.UseVisualStyleBackColor = false;
+            this.printButton.Visible = false;
             this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // errorLabel
@@ -319,7 +334,7 @@
             this.printLabel.Font = new System.Drawing.Font("NSimSun", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printLabel.Location = new System.Drawing.Point(501, 123);
             this.printLabel.Name = "printLabel";
-            this.printLabel.Size = new System.Drawing.Size(263, 323);
+            this.printLabel.Size = new System.Drawing.Size(291, 323);
             this.printLabel.TabIndex = 25;
             // 
             // label4
@@ -329,7 +344,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(470, -1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(294, 82);
+            this.label4.Size = new System.Drawing.Size(335, 82);
             this.label4.TabIndex = 26;
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -342,18 +357,19 @@
             this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetButton.ForeColor = System.Drawing.Color.White;
-            this.resetButton.Location = new System.Drawing.Point(503, 483);
+            this.resetButton.Location = new System.Drawing.Point(531, 483);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(261, 58);
             this.resetButton.TabIndex = 27;
             this.resetButton.Text = "New Purchase";
             this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 590);
+            this.ClientSize = new System.Drawing.Size(815, 590);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.printLabel);
